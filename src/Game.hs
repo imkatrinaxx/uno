@@ -5,6 +5,8 @@ import Shuffler
 
 -- TODO: Implement a method to initialize a new game given n players
 
+initialCardCount :: Int
+initialCardCount = 7
 --dynamic
 playerNames :: [String]
 playerNames = ["1-Katrina", "2-Aljomai", "3-Jackson", "4-Minho"]
