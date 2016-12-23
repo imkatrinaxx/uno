@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # If you are making changes to this file, make sure to run `hpack` to
 # update the corresponding cabal file.
 #
@@ -35,3 +36,42 @@ tests:
     dependencies:
       - uno
       - hspec
+=======
+# If you are making changes to this file, make sure to run `hpack` to
+# update the corresponding cabal file.
+#
+
+name: uno
+version: 0.1.1
+
+dependencies:
+  - base
+  - ansi-terminal
+  - random
+  - random-shuffle
+
+library:
+  exposed-modules:
+    - UnoI
+    - Common
+    - Shuffler
+    - Game
+  source-dirs: src
+  dependencies:
+
+executables:
+  uno:
+    main: Main.hs
+    source-dirs: src
+    dependencies:
+      - uno
+      - hpack
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - uno
+      - hspec
+>>>>>>> origin/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- This file has been generated from package.yaml by hpack version 0.15.0.
 --
 -- see: https://github.com/sol/hpack
@@ -56,3 +57,63 @@ test-suite test
     , uno
     , hspec
   default-language: Haskell2010
+=======
+-- This file has been generated from package.yaml by hpack version 0.15.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           uno
+version:        0.1.1
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , ansi-terminal
+    , random
+    , random-shuffle
+  exposed-modules:
+      UnoI
+      Common
+      Shuffler
+      Game
+  other-modules:
+      Main
+      Paths_uno
+  default-language: Haskell2010
+
+executable uno
+  main-is: Main.hs
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , ansi-terminal
+    , random
+    , random-shuffle
+    , uno
+    , hpack
+  other-modules:
+      Common
+      Game
+      Shuffler
+      UnoI
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , ansi-terminal
+    , random
+    , random-shuffle
+    , uno
+    , hspec
+  default-language: Haskell2010
+>>>>>>> origin/master
